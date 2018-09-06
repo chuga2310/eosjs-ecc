@@ -1,8 +1,8 @@
 {
-  "name": "eosjs-ecc",
-  "version": "4.0.4",
+  "name": "react-native-eosjs-ecc",
+  "version": "0.0.1",
   "description": "Elliptic curve cryptography functions",
-  "keywords": "ECC, Private Key, Public Key, Signature, AES, Encryption, Decryption",
+  "keywords": "React Native, Randombytes, ECC, Private Key, Public Key, Signature, AES, Encryption, Decryption",
   "main": "lib/index.js",
   "files": [
     "README.md",
@@ -10,23 +10,14 @@
     "lib"
   ],
   "scripts": {
-    "test": "mocha --use_strict src/*.test.js",
-    "test_lib": "mocha --use_strict lib/*.test.js",
-    "coverage": "nyc --reporter=html npm test",
-    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "build": "npm run build_lib && npm run build_browser",
     "build_lib": "rm -f lib/* && babel src --out-dir lib",
     "build_browser": "mkdir -p lib && browserify -o lib/eosjs-ecc.js -s eosjs_ecc lib/index.js",
     "build_browser_test": "npm run build && browserify -o dist/test.js lib/*.test.js",
-    "documentation": "node_modules/documentation/bin/documentation.js",
-    "minimize": "uglifyjs lib/eosjs-ecc.js -o lib/eosjs-ecc.min.js --source-map --compress --mangle",
-    "docs": "npm run documentation -- readme src/api_common.js --section \"Common API\" --shallow",
-    "srisum": "npx srisum lib/eosjs-ecc.*",
-    "prepublishOnly": "npm run build && npm run test_lib && npm run minimize && npm run docs && npm run srisum"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/EOSIO/eosjs-ecc.git"
+    "url": "git://github.com/MarcelBlockchain/react-native-eosjs-ecc.git"
   },
   "dependencies": {
     "bigi": "^1.4.2",
