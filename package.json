@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "Elliptic curve cryptography functions",
   "keywords": "React Native, Randombytes, ECC, Private Key, Public Key, Signature, AES, Encryption, Decryption",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "files": [
     "README.md",
     "docs",
-    "lib"
+    "src"
   ],
   "scripts": {
     "build": "npm run build_lib && npm run build_browser",
