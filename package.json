@@ -1,5 +1,5 @@
 {
-  "name": "react-native-eosjs-ecc",
+  "name": "eosjs-ecc",
   "version": "0.0.1",
   "description": "Elliptic curve cryptography functions",
   "keywords": "React Native, Randombytes, ECC, Private Key, Public Key, Signature, AES, Encryption, Decryption",
